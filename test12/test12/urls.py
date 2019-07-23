@@ -20,5 +20,5 @@ from account import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('account/', include('account.urls', namespace='account')),
-    re_path('.*', views.register),
+    re_path('.*', views.main),
 ]
